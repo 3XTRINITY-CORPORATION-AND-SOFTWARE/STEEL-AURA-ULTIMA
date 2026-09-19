@@ -36,3 +36,4 @@
 | ultima-sync-3d-torus.png | 04-sync-hud | LANE-04 Sync HUD ship 2026-09-19T08:41:25+03:00 — volumetric energy torus 91.07% |
 | ultima-sync-radar-lock.png | 04-sync-hud | LANE-04 Sync HUD ship 2026-09-19T08:41:25+03:00 — radar sweep + SYNC LOCK 55.00% |
 | ultima-sync-phase-align.png | 04-sync-hud | LANE-04 Sync HUD ship 2026-09-19T08:41:25+03:00 — dual cyan/magenta helix PHASE ALIGN 77.77% |
+| aura-meter-01.png | 01 | LANE-01 meter row ship 2026-09-19T08:40:29+03:00 |
