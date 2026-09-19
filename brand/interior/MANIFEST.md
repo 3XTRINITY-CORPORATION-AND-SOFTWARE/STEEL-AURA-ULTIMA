@@ -11,3 +11,8 @@
 | aura-amber-canopy-uplook-03.png | 05 | 4:3 uplook through canopy + gold bokeh |
 | aura-amber-path-band-04.png | 05 | 16:9 path with horizontal amber light band |
 | aura-amber-volume-glow-05.png | 05 | 1:1 abstract amber volume glow + cyan rim |
+| ultima-vhs-fog-crosswalk.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
+| ultima-vhs-interior-porch.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
+| ultima-vhs-lamp-alley.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
+| ultima-vhs-play-street.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
+| ultima-vhs-window-glow.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
