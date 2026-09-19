@@ -2,9 +2,14 @@
   "name": "steel-aura-ultima",
   "private": true,
   "version": "0.1.0",
-  "workspaces": ["packages/*", "apps/*"],
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "test:sync": "tsx --test packages/sync-kernel/src/smoke.test.ts"
+    "test:sync": "tsx --test packages/sync-kernel/src/smoke.test.ts",
+    "test:mix": "tsx --test packages/steel-core/src/mix-engine.test.ts",
+    "test": "npm run test:sync && npm run test:mix"
   },
   "devDependencies": {
     "tsx": "^4.19.0",
