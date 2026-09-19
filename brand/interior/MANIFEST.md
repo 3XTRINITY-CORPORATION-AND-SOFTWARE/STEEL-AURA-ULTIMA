@@ -26,3 +26,8 @@
 | ultima-magenta-03-wordmark-hero.png | 03 | STEEL STUDIO title-card hero |
 | ultima-magenta-04-three-quarter.png | 03 | three-quarter console + aurora |
 | ultima-magenta-05-fader-grid.png | 03 | fader-detail + magenta smoke |
+| aura-noir-01-sudame-street.png | 08 | facade mural, magenta script + green LED cross + cyan canopy |
+| aura-noir-02-cross-bloom.png | 08 | green LED cross bloom, magenta haze |
+| aura-noir-03-wet-avenue.png | 08 | wet avenue, magenta calligraphy + distant green cross |
+| aura-noir-04-canopy-door.png | 08 | cyan canopy door + green window cross + magenta ground script |
+| aura-noir-05-puddle-mirror.png | 08 | puddle reflections magenta/green |
