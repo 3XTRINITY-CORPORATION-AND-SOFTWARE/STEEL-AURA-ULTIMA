@@ -12,7 +12,7 @@ export function Timeline() {
   const [audioT, setAudioT] = useState(12.4)
   const [videoT, setVideoT] = useState(12.4)
   const [prompt, setPrompt] = useState(
-    'Aurora wash over void — violet #A855F7 ribbons, cyan bloom, music-video grade…',
+    'Aurora curtain over void-black — magenta #ff2bd6 underglow, VU green meters, cyan edges, radar HUD…',
   )
 
   return (

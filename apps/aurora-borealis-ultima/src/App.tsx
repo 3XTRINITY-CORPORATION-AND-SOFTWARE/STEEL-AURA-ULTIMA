@@ -12,11 +12,14 @@ export default function App() {
         <div className="brand">
           <h1>AURORA BOREALIS ULTIMA™</h1>
           <span className="chip">MUSIC-VIDEO SHELL</span>
+          <span className="chip magenta">STEEL Studio interior</span>
         </div>
         <div className="meta-row" style={{ margin: 0 }}>
           <span className="chip mock">DEMO UI</span>
-          <span className="chip">void #050505</span>
-          <span className="chip">violet #A855F7</span>
+          <span className="chip">void #050508</span>
+          <span className="chip magenta">magenta #ff2bd6</span>
+          <span className="chip vu">VU #39ff14</span>
+          <span className="chip radar">radar #3aa0ff</span>
         </div>
       </header>
 
@@ -44,7 +47,7 @@ export default function App() {
               </li>
             </ul>
             <p className="kv" style={{ marginTop: 10 }}>
-              next: sync-kernel + aura-viz live journal
+              next: sync-kernel + aura-viz live journal · variants/ultima pending
             </p>
           </div>
         </aside>

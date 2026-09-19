@@ -1,9 +1,11 @@
 import { useEffect, useRef } from 'react'
 import { BIN_COUNT, tickSimBins } from '../lib/simBins'
 
-const VOID = '#050505'
-const VIOLET = '#A855F7'
-const CYAN = '#22d3ee'
+/* Interior bible — Ultima: magenta wash + VU green meters + cyan edges */
+const VOID = '#050508'
+const VU_GREEN = '#39ff14'
+const VU_SOFT = '#00ff88'
+const NEON_CYAN = '#00e5ff'
 
 export function Stage() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -43,43 +45,58 @@ export function Stage() {
       binsRef.current = tickSimBins(binsRef.current, tSec)
       const bins = binsRef.current
 
-      // void + aurora wash
+      // void + magenta underglow wash + cyan edge bloom (aurora curtain)
       ctx.fillStyle = VOID
       ctx.fillRect(0, 0, w, h)
-      const g1 = ctx.createRadialGradient(w * 0.3, h * 0.2, 0, w * 0.3, h * 0.35, h * 0.7)
-      g1.addColorStop(0, 'rgba(168,85,247,0.28)')
-      g1.addColorStop(1, 'transparent')
-      ctx.fillStyle = g1
+      const gMagenta = ctx.createRadialGradient(w * 0.5, h * 1.05, 0, w * 0.5, h * 0.85, h * 0.85)
+      gMagenta.addColorStop(0, 'rgba(255,43,214,0.32)')
+      gMagenta.addColorStop(1, 'transparent')
+      ctx.fillStyle = gMagenta
       ctx.fillRect(0, 0, w, h)
-      const g2 = ctx.createRadialGradient(w * 0.75, h * 0.15, 0, w * 0.75, h * 0.3, h * 0.65)
-      g2.addColorStop(0, 'rgba(34,211,238,0.2)')
-      g2.addColorStop(1, 'transparent')
-      ctx.fillStyle = g2
+      const gCyan = ctx.createRadialGradient(w * 0.78, h * 0.12, 0, w * 0.78, h * 0.28, h * 0.6)
+      gCyan.addColorStop(0, 'rgba(0,229,255,0.18)')
+      gCyan.addColorStop(1, 'transparent')
+      ctx.fillStyle = gCyan
+      ctx.fillRect(0, 0, w, h)
+      const gVu = ctx.createRadialGradient(w * 0.22, h * 0.18, 0, w * 0.22, h * 0.35, h * 0.55)
+      gVu.addColorStop(0, 'rgba(0,255,136,0.12)')
+      gVu.addColorStop(1, 'transparent')
+      ctx.fillStyle = gVu
       ctx.fillRect(0, 0, w, h)
 
-      // aurora ribbon
+      // aurora curtain ribbons (cyan + magenta)
       ctx.beginPath()
       for (let x = 0; x <= w; x += 4) {
         const n = Math.sin(x * 0.01 + tSec * 0.9) * 18 + Math.sin(x * 0.023 + tSec * 1.4) * 10
-        const y = h * 0.28 + n
+        const y = h * 0.26 + n
         if (x === 0) ctx.moveTo(x, y)
         else ctx.lineTo(x, y)
       }
-      ctx.strokeStyle = 'rgba(34,211,238,0.55)'
+      ctx.strokeStyle = 'rgba(0,229,255,0.55)'
       ctx.lineWidth = 2
       ctx.stroke()
       ctx.beginPath()
       for (let x = 0; x <= w; x += 4) {
         const n = Math.sin(x * 0.012 + tSec * 1.1 + 1.2) * 22 + Math.sin(x * 0.03 + tSec) * 8
-        const y = h * 0.34 + n
+        const y = h * 0.32 + n
         if (x === 0) ctx.moveTo(x, y)
         else ctx.lineTo(x, y)
       }
-      ctx.strokeStyle = 'rgba(168,85,247,0.5)'
+      ctx.strokeStyle = 'rgba(255,43,214,0.55)'
       ctx.lineWidth = 2.5
       ctx.stroke()
+      ctx.beginPath()
+      for (let x = 0; x <= w; x += 4) {
+        const n = Math.sin(x * 0.008 + tSec * 0.7 + 0.4) * 14
+        const y = h * 0.38 + n
+        if (x === 0) ctx.moveTo(x, y)
+        else ctx.lineTo(x, y)
+      }
+      ctx.strokeStyle = 'rgba(58,160,255,0.35)'
+      ctx.lineWidth = 1.5
+      ctx.stroke()
 
-      // frequency bars (SIM)
+      // VU-style frequency bars (SIM — green meters per interior bible)
       const pad = 16
       const barAreaH = h * 0.42
       const baseY = h - pad
@@ -90,15 +107,16 @@ export function Stage() {
         const bh = v * barAreaH
         const x = pad + i * (barW + gap)
         const grad = ctx.createLinearGradient(0, baseY - bh, 0, baseY)
-        grad.addColorStop(0, CYAN)
-        grad.addColorStop(0.45, VIOLET)
-        grad.addColorStop(1, 'rgba(168,85,247,0.15)')
+        grad.addColorStop(0, VU_GREEN)
+        grad.addColorStop(0.35, VU_SOFT)
+        grad.addColorStop(0.75, NEON_CYAN)
+        grad.addColorStop(1, 'rgba(255,43,214,0.12)')
         ctx.fillStyle = grad
         ctx.fillRect(x, baseY - bh, barW, bh)
       }
 
-      // grid
-      ctx.strokeStyle = 'rgba(255,255,255,0.03)'
+      // faint radar grid
+      ctx.strokeStyle = 'rgba(58,160,255,0.05)'
       ctx.lineWidth = 1
       for (let gx = 0; gx < w; gx += 48) {
         ctx.beginPath()
@@ -130,8 +148,10 @@ export function Stage() {
         <span className="chip">STAGE</span>
         <span className="chip sim">SIM bins</span>
         <span className="chip mock">MOCK viz</span>
+        <span className="chip vu">VU green</span>
+        <span className="chip magenta">magenta wash</span>
       </div>
-      <canvas ref={canvasRef} aria-label="Aurora stage canvas with simulated frequency bins" />
+      <canvas ref={canvasRef} aria-label="Aurora stage canvas with simulated VU frequency bins" />
     </div>
   )
 }
