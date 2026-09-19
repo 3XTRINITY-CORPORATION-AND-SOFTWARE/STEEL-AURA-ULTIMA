@@ -1,0 +1,31 @@
+{
+  "name": "@3xtrinity/aura-viz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Smaller AURA 1:1 EQ/frequency pattern sync journal (1000:1000 contract class)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "fixtures",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:journal": "npm run build && node --test scripts/frequencyPatternJournal.test.mjs",
+    "harness": "npm run build && node scripts/harness.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.3"
+  }
+}
