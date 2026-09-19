@@ -13,6 +13,8 @@
     "test:journal": "node scripts/read-fixture.mjs"
   },
   "dependencies": {
+    "@steel-aura/aura-viz": "0.1.0",
+    "@steel-aura/media-bank": "0.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
