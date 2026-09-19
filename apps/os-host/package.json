@@ -1,0 +1,11 @@
+{
+  "name": "@steel-aura-ultima/os-host",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/main.ts",
+  "description": "PC kernel bridge — Goliath-inspired SyncClock + SyncPingV1 loop",
+  "dependencies": {
+    "@steel-aura-ultima/sync-kernel": "file:../../packages/sync-kernel"
+  }
+}

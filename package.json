@@ -1,0 +1,12 @@
+{
+  "name": "steel-aura-ultima",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "test:sync": "tsx --test packages/sync-kernel/src/ping.test.ts",
+    "os-host": "tsx apps/os-host/src/main.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
+  }
+}
