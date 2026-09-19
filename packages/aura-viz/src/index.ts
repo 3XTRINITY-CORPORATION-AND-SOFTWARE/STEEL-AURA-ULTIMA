@@ -1,24 +1,7 @@
-/**
- * @3xtrinity/aura-viz — smaller AURA INTO STEEL
- * Frequency pattern sync journal for AURORA BOREALIS ULTIMA™ (1000:1000 contract class).
- */
-
 export {
-  ACCURACY_CLASS_1000,
-  JOURNAL_SCHEMA,
-  FrequencyPatternJournal,
-  validateJournal,
-  assertOneToOne,
-} from './frequencyPatternJournal.js'
-
-export type {
-  AccuracyClass,
-  AudioHopSample,
-  VizHopSample,
-  FrequencyPatternEntry,
-  FrequencyPatternJournalMeta,
-  FrequencyPatternJournalDocument,
-  ValidateJournalOptions,
-  ValidateJournalResult,
-  RecordHopInput,
-} from './frequencyPatternJournal.js'
+  FrequencyPatternJournal, type AuraMode, type JournalHop, type JournalHeader,
+  type FrequencyPatternJournalData, type JournalWriteResult,
+} from './frequency-pattern-journal.ts';
+export {
+  AURA_MODES, VENDOR_SMALLER_AURA_SRC, type VendorTrackSlot, type VendorTrackState,
+} from './vendor-bridge.ts';

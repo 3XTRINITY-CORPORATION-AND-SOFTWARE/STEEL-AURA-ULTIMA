@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@steel-aura/sync-kernel": ["./packages/sync-kernel/src/index.ts"],
+      "@steel-aura/memory-bank": ["./packages/memory-bank/src/index.ts"],
+      "@steel-aura/media-bank": ["./packages/media-bank/src/index.ts"],
+      "@steel-aura/steel-core": ["./packages/steel-core/src/index.ts"],
+      "@steel-aura/aura-viz": ["./packages/aura-viz/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src/**/*.ts", "apps/*/src/**/*.ts"],
+  "exclude": ["node_modules", "dist", ".media-sandbox", "packages/*/vendor"]
+}
