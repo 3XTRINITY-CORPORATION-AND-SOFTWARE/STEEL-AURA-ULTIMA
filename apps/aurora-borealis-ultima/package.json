@@ -1,0 +1,11 @@
+{
+  "name": "@steel-aura/aurora-borealis-ultima",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@steel-aura/aura-viz": "0.1.0",
+    "@steel-aura/media-bank": "0.1.0"
+  }
+}
