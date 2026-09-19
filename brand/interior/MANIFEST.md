@@ -21,3 +21,4 @@
 | aura-ring-03.png | 02 | wall-mounted ring + 6 VU strip |
 | aura-ring-04.png | 02 | angle ring + 2 VU crop |
 | aura-ring-05.png | 02 | void logo-only tube ring |
+| aura-meter-01.png | 01 | LANE-01 meter row ship 2026-09-19T08:40:29+03:00 |
