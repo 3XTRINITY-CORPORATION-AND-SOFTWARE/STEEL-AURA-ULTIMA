@@ -1,0 +1,88 @@
+/**
+ * AURA™ + AURORA BOREALIS ULTIMA™ — brand tokens
+ * Source: brand/interior/INTERIOR-BIBLE.md (Theodor STEEL console refs 2026-09-19)
+ * Owner: Lore & Brand
+ *
+ * AURA:   cyan edge + vu-green dominant; magenta muted
+ * ULTIMA: magenta underglow + aurora + amber haze; vu-green meters retained
+ */
+
+:root {
+  /* Surfaces */
+  --void-black: #050508;
+  --steel-matte: #1a1c22;
+  --panel-raised: #0a0a0e;
+
+  /* Primary triad (console) */
+  --vu-green: #39ff14;
+  --vu-green-soft: #00ff88;
+  --neon-cyan: #00e5ff;
+  --neon-magenta: #ff2bd6;
+
+  /* Supporting */
+  --amber-canopy: #ffb020;
+  --led-red: #ff1a1a;
+  --radar-blue: #3aa0ff;
+
+  /* Legacy / bridge aliases (TrinityWayve platform triad — do not replace interior void) */
+  --tw-goliath: #e11d48;
+  --tw-matrix: #00ff41;
+  --tw-void: #050505;
+
+  /* Derived */
+  --cyan-edge: var(--neon-cyan);
+  --magenta-underglow: var(--neon-magenta);
+  --vu-green-glow: color-mix(in srgb, var(--vu-green) 55%, transparent);
+  --cyan-edge-glow: color-mix(in srgb, var(--neon-cyan) 45%, transparent);
+  --magenta-underglow-glow: color-mix(in srgb, var(--neon-magenta) 50%, transparent);
+  --amber-haze: color-mix(in srgb, var(--amber-canopy) 28%, transparent);
+
+  --grain-noise-opacity: 0.08;
+}
+
+/* AURA™ product skin — cyan + vu-green dominant; less magenta */
+[data-brand="aura"],
+.theme-aura {
+  --brand-primary: var(--neon-cyan);
+  --brand-signal: var(--vu-green);
+  --brand-accent: var(--vu-green-soft);
+  --brand-edge: var(--cyan-edge);
+  --brand-underglow: color-mix(in srgb, var(--neon-magenta) 22%, transparent);
+  --brand-wash-a: var(--cyan-edge-glow);
+  --brand-wash-b: var(--vu-green-glow);
+  --brand-haze: transparent;
+  color-scheme: dark;
+}
+
+/* ULTIMA™ product skin — magenta underglow + amber canopy behind console */
+[data-brand="ultima"],
+.theme-ultima {
+  --brand-primary: var(--neon-magenta);
+  --brand-signal: var(--vu-green);
+  --brand-accent: var(--radar-blue);
+  --brand-edge: var(--neon-cyan);
+  --brand-underglow: var(--magenta-underglow);
+  --brand-wash-a: var(--magenta-underglow-glow);
+  --brand-wash-b: var(--cyan-edge-glow);
+  --brand-haze: var(--amber-haze);
+  color-scheme: dark;
+}
+
+/* Utility classes for mirrors / variants */
+.edge-cyan {
+  box-shadow: inset 0 1px 0 var(--cyan-edge), 0 0 12px var(--cyan-edge-glow);
+  border-color: color-mix(in srgb, var(--neon-cyan) 55%, var(--steel-matte));
+}
+
+.underglow-magenta {
+  box-shadow: 0 18px 40px -8px var(--magenta-underglow-glow);
+}
+
+.meter-vu {
+  color: var(--vu-green);
+  text-shadow: 0 0 10px var(--vu-green-glow);
+}
+
+.canopy-amber {
+  background-image: radial-gradient(ellipse 70% 45% at 50% 0%, var(--amber-haze), transparent 60%);
+}
