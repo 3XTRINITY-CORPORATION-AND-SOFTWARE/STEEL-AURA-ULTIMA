@@ -1,0 +1,4 @@
+npm install
+npm test
+cd apps/aurora-borealis-ultima
+npm run build
