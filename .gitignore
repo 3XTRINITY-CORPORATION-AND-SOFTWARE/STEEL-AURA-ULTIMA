@@ -1,10 +1,5 @@
 node_modules/
 dist/
-<<<<<<< HEAD
-*.tsbuildinfo
-.DS_Store
-package-lock.json
-=======
 .media-sandbox/
 *.tsbuildinfo
 .DS_Store
@@ -12,4 +7,3 @@ package-lock.json
 .env.*
 !.env.example
 coverage/
->>>>>>> origin/main
