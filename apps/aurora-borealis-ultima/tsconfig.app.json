@@ -19,5 +19,5 @@
     "noUncheckedSideEffectImports": true
   },
   "include": ["src"],
-  "exclude": ["src/readJournal.ts"]
+  "exclude": ["src/readJournal.ts", "src/index.ts"]
 }

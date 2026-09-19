@@ -3,9 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "description": "AURORA BOREALIS ULTIMA™ music-video visualizer shell — AURA 1:1 sync UI (MOCK until wired)",
   "main": "./src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "read-journal": "node scripts/read-fixture.mjs",
+    "test:journal": "node scripts/read-fixture.mjs"
+  },
   "dependencies": {
-    "@steel-aura/aura-viz": "0.1.0",
-    "@steel-aura/media-bank": "0.1.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
   }
 }
