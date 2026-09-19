@@ -2,7 +2,7 @@
 
 Music-video-class visualizer **UI shell** (branch `aurora-borealis-ultima`).
 
-Visual twin to smaller AURA (`packages/aura-viz/vendor/smaller-aura-src`): void `#050505`, violet `#A855F7`, cyan aurora washes, glass panels, mono chips — editor feel for synced MP4 / art.
+Interior SoT: `brand/interior/INTERIOR-BIBLE.md` (STEEL Studio console). Ultima skin: void-black `#050508`, magenta `#ff2bd6` underglow + aurora curtain, VU green `#39ff14`/`#00ff88` meters, neon-cyan edges, radar-blue sync HUD. `variants/ultima` assets pending — tokens-only until generated. Editor feel for synced MP4 / art; not a production 1:1 claim.
 
 ## Honesty
 

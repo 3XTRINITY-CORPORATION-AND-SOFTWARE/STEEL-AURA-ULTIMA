@@ -20,7 +20,7 @@ export function SyncStrip() {
     <div className="glass sync-strip">
       <div>
         <div className="meta-row">
-          <span className="chip">AURA 1:1 SYNC</span>
+          <span className="chip radar">AURA 1:1 SYNC</span>
           <span className={`chip ${statusClass}`}>{sample.status}</span>
           <span className="chip mock">{sample.label}</span>
         </div>
