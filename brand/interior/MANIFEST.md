@@ -21,3 +21,8 @@
 | aura-ring-03.png | 02 | wall-mounted ring + 6 VU strip |
 | aura-ring-04.png | 02 | angle ring + 2 VU crop |
 | aura-ring-05.png | 02 | void logo-only tube ring |
+| ultima-magenta-01-desk-splash.png | 03 | splash wordmark + desk + aurora |
+| ultima-magenta-02-underglow-low.png | 03 | low-angle underglow + radar |
+| ultima-magenta-03-wordmark-hero.png | 03 | STEEL STUDIO title-card hero |
+| ultima-magenta-04-three-quarter.png | 03 | three-quarter console + aurora |
+| ultima-magenta-05-fader-grid.png | 03 | fader-detail + magenta smoke |
