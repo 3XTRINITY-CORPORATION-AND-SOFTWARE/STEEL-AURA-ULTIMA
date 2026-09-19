@@ -16,3 +16,8 @@
 | ultima-vhs-lamp-alley.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
 | ultima-vhs-play-street.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
 | ultima-vhs-window-glow.png | 06-vhs-street | LANE-06 VHS Street ship 2026-09-19T08:36:41+03:00 |
+| aura-ring-01.png | 02 | ring + STEEL STUDIO + 4 VU rack |
+| aura-ring-02.png | 02 | logo-only grain close-up |
+| aura-ring-03.png | 02 | wall-mounted ring + 6 VU strip |
+| aura-ring-04.png | 02 | angle ring + 2 VU crop |
+| aura-ring-05.png | 02 | void logo-only tube ring |
