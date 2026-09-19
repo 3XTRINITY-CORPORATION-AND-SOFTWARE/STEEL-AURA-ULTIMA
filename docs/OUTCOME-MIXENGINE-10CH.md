@@ -70,4 +70,4 @@ npm test
 
 ## PR URL
 
-(pending — filled after `gh pr create`)
+https://github.com/3XTRINITY-CORPORATION-AND-SOFTWARE/STEEL-AURA-ULTIMA/pull/3
