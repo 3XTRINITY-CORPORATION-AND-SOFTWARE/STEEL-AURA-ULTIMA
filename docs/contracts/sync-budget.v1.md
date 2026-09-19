@@ -29,3 +29,14 @@ On breach → UI mode `safe_viz` (degrade viz); kernel stays audio source of tru
 - `packages/sync-kernel/src/` — types, clock, ping, governor
 - `apps/os-host/src/` — host bridge demo
 - North-star narrative: `docs/NORTH-STAR.md` §3
+
+## MixEngine wire (U1)
+
+`MixEngine.playAllArmed()` uses `SyncPing` / `PingClock` + `withinBudget` / `compensationDelayMs` / `SYNC_BUDGET_MS` (±200):
+
+1. Read `measuredSkewMs()`
+2. Outside budget → refuse (default)
+3. Inside → schedule at `nowMs + compensationDelayMs(skew)`
+
+CPU governor: `CpuGovernor` / `recommendMode` — reduce meters/viz before audio.
+
