@@ -37,4 +37,6 @@
 | ultima-sync-radar-lock.png | 04-sync-hud | LANE-04 Sync HUD ship 2026-09-19T08:41:25+03:00 — radar sweep + SYNC LOCK 55.00% |
 | ultima-sync-phase-align.png | 04-sync-hud | LANE-04 Sync HUD ship 2026-09-19T08:41:25+03:00 — dual cyan/magenta helix PHASE ALIGN 77.77% |
 | aura-meter-01.png | 01 | LANE-01 meter row ship 2026-09-19T08:40:29+03:00 |
-| ultima-cover-01-pole-shadow.png | 10 | pole + advisory grit shadow, album-cover (sha 3b03ef97a850) |
+| ultima-cover-01-pole-shadow.png | 10 | pole + advisory grit (Create regen ship) |
+| ultima-cover-02-pole-upshot.png | 10 | pole upshot advisory cover |
+| ultima-cover-03-brick-edge.png | 10 | brick-edge album grit |
