@@ -40,3 +40,6 @@
 | ultima-cover-01-pole-shadow.png | 10 | pole + advisory grit (Create regen ship) |
 | ultima-cover-02-pole-upshot.png | 10 | pole upshot advisory cover |
 | ultima-cover-03-brick-edge.png | 10 | brick-edge album grit |
+| ultima-streak-01-void-whip.png | 07 | void whip kinetic trail (LANE-07) |
+| ultima-streak-02-aurora-ribbon.png | 07 | kinetic aurora ribbon streak, void field (sha 9ea6113b3cf1) |
+| ultima-streak-03-void-slash.png | 07 | void slash motion trail (sha a34e4873b065) |
