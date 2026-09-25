@@ -40,3 +40,5 @@
 | ultima-cover-01-pole-shadow.png | 10 | pole + advisory grit (Create regen ship) |
 | ultima-cover-02-pole-upshot.png | 10 | pole upshot advisory cover |
 | ultima-cover-03-brick-edge.png | 10 | brick-edge album grit |
+| aura-meter-02.png | 01 | three-quarter console room, 9 green VUs, cyan edge |
+| aura-meter-03.png | 01 | macro VU bank crop, 7 meters, cyan rim, red LEDs |
