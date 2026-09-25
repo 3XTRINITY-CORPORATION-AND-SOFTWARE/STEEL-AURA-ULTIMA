@@ -43,3 +43,5 @@
 | ultima-streak-01-void-whip.png | 07 | void whip kinetic trail (LANE-07) |
 | ultima-streak-02-aurora-ribbon.png | 07 | kinetic aurora ribbon streak, void field (sha 9ea6113b3cf1) |
 | ultima-streak-03-void-slash.png | 07 | void slash motion trail (sha a34e4873b065) |
+| aura-meter-02.png | 01 | three-quarter console room, 9 green VUs, cyan edge |
+| aura-meter-03.png | 01 | macro VU bank crop, 7 meters, cyan rim, red LEDs |
