@@ -49,3 +49,5 @@
 | ultima-streak-05-radial-bloom.png | 07 | radial bloom motion burst (sha c97e2a020446) |
 | ultima-cover-04-bolt-plate.png | 10 | bolt plate close-up advisory grit |
 | ultima-cover-05-shadow-lane.png | 10 | shadow lane advisory panel |
+| aura-meter-04-lowangle-desk.png | 01 | low-angle desk + cyan streak, 10 green VUs |
+| aura-meter-05-profile-void.png | 01 | profile rack module in void, 8 VUs, green spill |
