@@ -47,3 +47,5 @@
 | aura-meter-03.png | 01 | macro VU bank crop, 7 meters, cyan rim, red LEDs |
 | ultima-streak-04-rain-curtain.png | 07 | rain curtain kinetic streaks (sha c93866395b06) |
 | ultima-streak-05-radial-bloom.png | 07 | radial bloom motion burst (sha c97e2a020446) |
+| ultima-cover-04-bolt-plate.png | 10 | bolt plate close-up advisory grit |
+| ultima-cover-05-shadow-lane.png | 10 | shadow lane advisory panel |
