@@ -51,3 +51,5 @@
 | ultima-cover-05-shadow-lane.png | 10 | shadow lane advisory panel |
 | aura-meter-04-lowangle-desk.png | 01 | low-angle desk + cyan streak, 10 green VUs |
 | aura-meter-05-profile-void.png | 01 | profile rack module in void, 8 VUs, green spill |
+| aura-ring-06.png | 02 | macro glass tube arc + partial STEEL STUDIO |
+| aura-ring-07.png | 02 | low angle ring + rack reflection |
