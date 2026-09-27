@@ -53,3 +53,5 @@
 | aura-meter-05-profile-void.png | 01 | profile rack module in void, 8 VUs, green spill |
 | aura-ring-06.png | 02 | macro glass tube arc + partial STEEL STUDIO |
 | aura-ring-07.png | 02 | low angle ring + rack reflection |
+| aura-meter-06.png | 01 | LANE-01 overhead plan of 10 VU bay + cyan frame |
+| aura-meter-07.png | 01 | LANE-01 glass-rake capsule VU row, red needles |
