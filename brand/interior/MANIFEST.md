@@ -55,3 +55,5 @@
 | aura-ring-07.png | 02 | low angle ring + rack reflection |
 | aura-meter-06.png | 01 | LANE-01 overhead plan of 10 VU bay + cyan frame |
 | aura-meter-07.png | 01 | LANE-01 glass-rake capsule VU row, red needles |
+| ultima-magenta-06.png | 03 | wide aurora establishing |
+| ultima-magenta-07.png | 03 | macro plaque + underglow |
