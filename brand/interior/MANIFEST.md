@@ -57,3 +57,5 @@
 | aura-meter-07.png | 01 | LANE-01 glass-rake capsule VU row, red needles |
 | ultima-magenta-06.png | 03 | wide aurora establishing |
 | ultima-magenta-07.png | 03 | macro plaque + underglow |
+| ultima-cover-06.png | 10 | LANE-10 wave-2 advisory cover |
+| ultima-cover-07.png | 10 | LANE-10 wave-2 advisory cover |
