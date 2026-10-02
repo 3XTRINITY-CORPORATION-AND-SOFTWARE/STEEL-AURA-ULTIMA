@@ -61,5 +61,7 @@
 | ultima-cover-07.png | 10 | LANE-10 wave-2 advisory cover |
 | ultima-streak-06.png | 07 | curved S-hook neon streak, magenta/cyan light-painting on void (sha 0cf15e429933) |
 | ultima-streak-07.png | 07 | horizontal amber-to-magenta-to-cyan gradient streak with wet-floor reflection (sha 7ca325be7238) |
+| ultima-vhs-06.png | 06 | LANE-06 wave-3 bus-stop shelter, orange lamp, PLAY + date stamp (sha fcfd44ddd0ed) |
+| ultima-vhs-07.png | 06 | LANE-06 wave-3 upstairs window looking down on street, tracking glitch (sha 68376a95de53) |
 | ultima-sync-06.png | 04-sync-hud | LANE-04 Sync HUD wave-3 2026-10-03T00:50:04+03:00 — console desk + floating HUD torus, SYNC 96.30% |
 | ultima-sync-07.png | 04-sync-hud | LANE-04 Sync HUD wave-3 2026-10-03T00:50:04+03:00 — macro energy-ring arc over nebula haze, 72.66% |
