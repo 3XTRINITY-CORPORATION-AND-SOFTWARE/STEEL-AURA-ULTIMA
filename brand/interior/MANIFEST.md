@@ -67,3 +67,5 @@
 | ultima-vhs-07.png | 06 | LANE-06 wave-3 upstairs window looking down on street, tracking glitch (sha 68376a95de53) |
 | ultima-sync-06.png | 04-sync-hud | LANE-04 Sync HUD wave-3 2026-10-03T00:50:04+03:00 — console desk + floating HUD torus, SYNC 96.30% |
 | ultima-sync-07.png | 04-sync-hud | LANE-04 Sync HUD wave-3 2026-10-03T00:50:04+03:00 — macro energy-ring arc over nebula haze, 72.66% |
+| aura-noir-06.png | 08 | tilted heart-glyph lightbox + green LED cross, wet street, cyan roofline |
+| aura-noir-07.png | 08 | wide alley, steam grate, far green cross, magenta doorway, amber lamp |
