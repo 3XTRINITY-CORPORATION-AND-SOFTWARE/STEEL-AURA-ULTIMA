@@ -61,3 +61,5 @@
 | ultima-cover-07.png | 10 | LANE-10 wave-2 advisory cover |
 | ultima-streak-06.png | 07 | curved S-hook neon streak, magenta/cyan light-painting on void (sha 0cf15e429933) |
 | ultima-streak-07.png | 07 | horizontal amber-to-magenta-to-cyan gradient streak with wet-floor reflection (sha 7ca325be7238) |
+| aura-amber-06.png | 05 | console + amber haze 16:9 |
+| aura-amber-07.png | 05 | diagonal amber beam 16:9 |
