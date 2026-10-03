@@ -9,6 +9,6 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "harness": "npm run build && node scripts/harness.mjs",
-    "test:journal": "npm run build && node --test scripts/frequencyPatternJournal.test.mjs"
+    "test:journal": "npm run build && node --test scripts/frequencyPatternJournal.test.mjs scripts/exports.test.mjs"
   }
 }

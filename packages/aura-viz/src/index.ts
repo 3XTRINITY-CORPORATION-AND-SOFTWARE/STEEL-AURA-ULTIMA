@@ -6,11 +6,11 @@ export {
   type FrequencyPatternJournalMeta, type FrequencyPatternJournalDocument,
   type ValidateJournalOptions, type ValidateJournalResult, type RecordHopInput,
 } from './frequencyPatternJournal.ts';
-// Earlier scaffold hop-journal (header+hops model). Kept under a distinct name: it used to
-// shadow the documented `FrequencyPatternJournal` export, which broke dist consumers.
+// Legacy scaffold hop-journal (header+hops model) — separate class with distinct semantics,
+// NOT an alias of FrequencyPatternJournal. Compatibility boundary only.
 export {
-  FrequencyPatternJournal as HopJournal, type AuraMode, type JournalHop, type JournalHeader,
-  type FrequencyPatternJournalData, type JournalWriteResult,
+  HopJournal, type AuraMode, type JournalHop, type JournalHeader,
+  type HopJournalData, type JournalWriteResult,
 } from './frequency-pattern-journal.ts';
 export {
   AURA_MODES, VENDOR_SMALLER_AURA_SRC, type VendorTrackSlot, type VendorTrackState,
