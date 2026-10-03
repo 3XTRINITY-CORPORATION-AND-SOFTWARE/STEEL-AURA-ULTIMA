@@ -21,5 +21,20 @@ jobs:
           cache: npm
       - name: Install (reproducible)
         run: npm ci
+      - name: Dependency audit (fails on high+)
+        run: npm run audit:deps
+      - name: Typecheck
+        run: npm run typecheck
       - name: Test
         run: npm test
+      - name: Build
+        run: npm run build
+      - name: Verify build outputs
+        run: npm run verify:build
+      - name: Upload app build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aurora-borealis-ultima-dist
+          path: apps/aurora-borealis-ultima/dist
+          if-no-files-found: error
+          retention-days: 7

@@ -9,11 +9,17 @@
   "scripts": {
     "test:sync": "tsx --test packages/sync-kernel/src/smoke.test.ts",
     "test:mix": "tsx --test packages/steel-core/src/mix-engine.test.ts",
-    "test": "npm run test:sync && npm run test:mix"
+    "test:ultima": "tsx --test apps/aurora-borealis-ultima/src/readJournal.test.ts",
+    "test:journal": "npm run test:journal -w @steel-aura/aura-viz",
+    "test": "npm run test:sync && npm run test:mix && npm run test:ultima && npm run test:journal",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run build -w @steel-aura/aura-viz && npm run build -w @steel-aura/aurora-borealis-ultima",
+    "verify:build": "node scripts/verify-build.mjs",
+    "audit:deps": "npm audit --audit-level=high"
   },
   "devDependencies": {
     "tsx": "^4.19.0",
-    "typescript": "^5.6.0",
+    "typescript": "^5.7.0",
     "@types/node": "^20.0.0"
   }
 }

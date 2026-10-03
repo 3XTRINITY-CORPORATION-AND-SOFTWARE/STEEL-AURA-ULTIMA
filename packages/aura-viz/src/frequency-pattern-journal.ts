@@ -1,4 +1,10 @@
-/** FrequencyPatternJournal — 1:1 audio hop ↔ viz frame (1000:1000). */
+/**
+ * HopJournal — LEGACY scaffold (header + hops model; viz frame index must equal hop index).
+ * NOT the documented journal: see frequencyPatternJournal.ts (`FrequencyPatternJournal`,
+ * document/entries model with validateJournal/assertOneToOne). Different data shape and
+ * semantics (toJSON() returns an object here, a string there) — never interchangeable.
+ * Kept only as a compatibility boundary; no in-repo runtime consumers.
+ */
 export type AuraMode = 'bars' | 'ring' | 'wave' | 'bloom';
 
 export type JournalHop = {
@@ -9,10 +15,10 @@ export type JournalHeader = {
   version: 1; accuracyClass: '1000:1000'; hopCount: number; createdAt: number; sourceLabel?: string;
 };
 
-export type FrequencyPatternJournalData = { header: JournalHeader; hops: JournalHop[] };
+export type HopJournalData = { header: JournalHeader; hops: JournalHop[] };
 export type JournalWriteResult = { accepted: boolean; reason?: string };
 
-export class FrequencyPatternJournal {
+export class HopJournal {
   private hops: JournalHop[] = [];
   private sourceLabel?: string;
   constructor(sourceLabel?: string) { this.sourceLabel = sourceLabel; }
@@ -42,7 +48,7 @@ export class FrequencyPatternJournal {
 
   isPerfectOneToOne(): boolean { return this.accuracyRatio() === 1; }
 
-  toJSON(): FrequencyPatternJournalData {
+  toJSON(): HopJournalData {
     return {
       header: {
         version: 1, accuracyClass: '1000:1000', hopCount: this.hops.length,
@@ -52,8 +58,8 @@ export class FrequencyPatternJournal {
     };
   }
 
-  static fromJSON(data: FrequencyPatternJournalData): FrequencyPatternJournal {
-    const j = new FrequencyPatternJournal(data.header.sourceLabel);
+  static fromJSON(data: HopJournalData): HopJournal {
+    const j = new HopJournal(data.header.sourceLabel);
     for (const hop of data.hops) {
       const r = j.write(hop);
       if (!r.accepted) throw new Error(r.reason);

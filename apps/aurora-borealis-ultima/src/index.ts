@@ -1,11 +1,11 @@
 /**
  * AURORA BOREALIS ULTIMA™ — entry that conceptually wires AURA journal + media bank.
  */
-import type { FrequencyPatternJournal, FrequencyPatternJournalData } from '../../../packages/aura-viz/src/index.ts';
+import type { FrequencyPatternJournal, FrequencyPatternJournalDocument } from '../../../packages/aura-viz/src/index.ts';
 import type { MediaBank, MediaAsset, VideoMetadata } from '../../../packages/media-bank/src/index.ts';
 
 export type UltimaInputs = {
-  journal: FrequencyPatternJournal | FrequencyPatternJournalData;
+  journal: FrequencyPatternJournal | FrequencyPatternJournalDocument;
   media?: MediaBank;
   videoAsset?: MediaAsset;
 };
@@ -18,9 +18,7 @@ export type UltimaPlan = {
 
 /** Build a generation plan from 1:1 frequency journal (+ optional media). */
 export function planFromJournal(inputs: UltimaInputs): UltimaPlan {
-  const data = 'toJSON' in inputs.journal && typeof inputs.journal.toJSON === 'function'
-    ? inputs.journal.toJSON()
-    : (inputs.journal as FrequencyPatternJournalData);
+  const doc = 'toDocument' in inputs.journal ? inputs.journal.toDocument() : inputs.journal;
 
   const videoHint =
     inputs.videoAsset?.metadata.kind === 'video'
@@ -32,7 +30,7 @@ export function planFromJournal(inputs: UltimaInputs): UltimaPlan {
       : undefined;
 
   return {
-    hopCount: data.header.hopCount,
+    hopCount: doc.entries.length,
     accuracyClass: '1000:1000',
     videoHint,
   };
