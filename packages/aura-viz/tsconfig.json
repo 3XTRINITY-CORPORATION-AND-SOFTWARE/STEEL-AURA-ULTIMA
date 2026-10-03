@@ -11,6 +11,7 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "rewriteRelativeImportExtensions": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

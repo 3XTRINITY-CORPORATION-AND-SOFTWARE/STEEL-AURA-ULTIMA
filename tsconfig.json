@@ -6,6 +6,8 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "paths": {
       "@steel-aura/sync-kernel": ["./packages/sync-kernel/src/index.ts"],
       "@steel-aura/memory-bank": ["./packages/memory-bank/src/index.ts"],

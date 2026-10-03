@@ -11,7 +11,7 @@ import {
   validateJournal,
   ACCURACY_CLASS_1000,
   type FrequencyPatternJournalDocument,
-} from '../../../packages/aura-viz/dist/index.js'
+} from '../../../packages/aura-viz/src/index.ts'
 
 const here = dirname(fileURLToPath(import.meta.url))
 
